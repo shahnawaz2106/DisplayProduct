@@ -23,8 +23,7 @@ const ProductDetailScreen = ({route, navigation}) => {
     try {
       const response = await axios.get(`https://dummyjson.com/products/${id}`);
       setProduct(response.data);
-      console.log(response.data);
-      console.log(product);
+      
     } catch (error) {
       console.error('Error fetching product details:', error);
     }
